@@ -57,4 +57,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
+     // --- 2. SELETORES DO DOM ---
+    const productGrid = document.getElementById('product-grid');
+    const cartSidebar = document.getElementById('cart-sidebar');
+    const cartToggle = document.getElementById('cart-toggle');
+    const cartClose = document.getElementById('cart-close');
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotalElement = document.getElementById('cart-total');
+    const cartItemCountElement = document.getElementById('cart-item-count');
+    const overlay = document.getElementById('sidebar-overlay');
+
+     // --- Seletores do Modal e Checkout ---
+    const checkoutBtn = document.querySelector('.checkout-btn');
+    const orderModal = document.getElementById('order-modal');
+    const modalCloseX = document.getElementById('modal-close-x');
+    const modalCloseOk = document.getElementById('modal-close-ok');
+
+    // --- 3. ESTADO DO CARRINHO (State) ---
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
 });   
+
