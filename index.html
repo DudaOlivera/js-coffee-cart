@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <title>A Pausa Doce - Seu Momento</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>A Pausa Doce</h1>
+            <div class="cart-button" id="cart-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span id="cart-item-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Nosso Menu</h2>
+        <section id="product-grid" class="product-grid">
+            </section>
+    </main>
+
+    <aside id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Seu Pedido</h3>
+            <button id="cart-close" class="cart-close-btn">&times;</button>
+        </div>
+        
+        <div id="cart-items" class="cart-items-container">
+            </div>
+        
+        <div class="cart-footer">
+            <div id="cart-total" class="cart-total">
+                Total: R$ 0,00
+            </div>
+            <button class="checkout-btn">Finalizar Pedido</button>
+        </div>
+    </aside>
+
+    <div id="sidebar-overlay" class="overlay"></div>
+
+    <script src="script.js"></script>
+
+    <div id="order-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modal-close-x" class="modal-close-btn">&times;</button>
+            
+            <div class="modal-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                </svg>
+            </div>
+            
+            <h2>Pedido a caminho!</h2>
+            <p>Seu pedido foi recebido e já está sendo preparado com muito carinho.</p>
+            
+            <button id="modal-close-ok" class="modal-ok-btn">OK</button>
+        </div>
+    </div>
+
+</body>
+</html>
