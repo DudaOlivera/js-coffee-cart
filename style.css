@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
 
 :root {
-    --bg-color:
-    --card-bg-color: 
-    --primary-border:
-    --text-color: 
-    --text-secondary: 
-    --accent-color 
-    --accent-color-hover: 
-    --danger-color: 
-    --shadow-color: 
+    --bg-color: #F8F4EF;
+    --card-bg-color: #FFFFFF;
+    --primary-border: #E0E0E0;
+    --text-color: #4A3E38;
+    --text-secondary: #7A6F68;
+    --accent-color: #A0522D;
+    --accent-color-hover: #8D4928;
+    --price-color: #6C757D;
+    --danger-color: #DC3545;
+    --shadow-color: rgba(0, 0, 0, 0.05);
 } 
 
 * {
